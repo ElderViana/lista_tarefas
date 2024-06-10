@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Listas De Tarefas APP</title>
+    </head>
+    <body>
+        <div class="list">
+            <header>
+                <div class="image">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                    <h1>LISTA DE TAREFAS APP</h1>
+            </header>
+            <form id="idForm">
+                <div class="container">
+                    <div class="laborName">
+                        <input type="text" id="idName" placeholder="Nome da Tarefa">
+                    </div>
+                </div>
+                <div class="comboBox">
+                    <select name="marker" id="idStatusType">
+                        <option value="" disabled selected>Selecione o status</option>
+                        <option value="A fazer">A fazer</option>
+                        <option value="Fazendo">Fazendo</option>
+                        <option value="Feito">Feito</option>
+                    </select>
+                </div>
+                <div class="container">
+                    <div class="date">
+                        <input type="date" id="idDate" placeholder="Data">
+                    </div>
+                </div>
+                <div class="add">
+                    <input type="submit" value="Adicionar" class="btnAdd">
+                </div>
+            </form>
+            <table id="idListTable">
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </body>
+<script src="js/script.js"></script>
+</html>
